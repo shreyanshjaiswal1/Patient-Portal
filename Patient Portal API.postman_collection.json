@@ -1,0 +1,101 @@
+{
+  "info": {
+    "name": "Patient Portal API",
+    "description": "Complete API collection for the Patient Portal medical document management system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["health"]
+        },
+        "description": "Check if the API is running and healthy"
+      }
+    },
+    {
+      "name": "Upload Document",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/documents/upload",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["documents", "upload"]
+        },
+        "description": "Upload a PDF medical document"
+      }
+    },
+    {
+      "name": "List Documents",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/documents",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["documents"]
+        },
+        "description": "Get all uploaded documents"
+      }
+    },
+    {
+      "name": "Download Document",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/documents/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["documents", "1"]
+        },
+        "description": "Download a specific document by ID"
+      }
+    },
+    {
+      "name": "Delete Document",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/documents/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["documents", "1"]
+        },
+        "description": "Delete a specific document by ID"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5001",
+      "type": "string"
+    }
+  ]
+}
