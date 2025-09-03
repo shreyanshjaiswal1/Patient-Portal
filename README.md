@@ -39,9 +39,10 @@ A secure and user-friendly patient portal application for managing medical docum
 
 ### Installation
 
-1. **Clone and navigate to project**
+1. **Clone the repository**
    ```bash
-   cd "Fullstack Assignment"
+   git clone https://github.com/shreyanshjaiswal1/Patient-Portal.git
+   cd Patient-Portal
    ```
 
 2. **Install backend dependencies**

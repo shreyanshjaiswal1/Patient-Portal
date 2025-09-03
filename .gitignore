@@ -3,6 +3,7 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
 # Production builds
 frontend/dist/
@@ -20,6 +21,7 @@ backend/dist/
 *.sqlite
 *.sqlite3
 *.db
+database.sqlite
 
 # Uploaded files
 uploads/*
